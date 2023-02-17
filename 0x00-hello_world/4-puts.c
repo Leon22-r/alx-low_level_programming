@@ -2,9 +2,9 @@
 /**
  * main - starting point of the prograam
  */
-void main(void)
+int main(void)
 {
-	long mine[] = "Programming is like building a multilingual puzzle";
+	char mine[] = "Programming is like building a multilingual puzzle";
 
 	puts(mine);
 
