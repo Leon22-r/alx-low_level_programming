@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - starting point of the prograam
- * mine - string to be printed
+ * Return: Always 0 (succees)
  */
 int main(void)
 {
