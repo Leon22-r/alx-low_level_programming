@@ -5,11 +5,6 @@
  *
  * Return: always 0
  */
-int print_alphabet(void)
-{
-	printf("abcdefghijklmnopqrstuvwxyz");
-	return (0);
-}
 int main(void)
 {
 	printf("abcdefghijklmnopqrstuvwxyz\n");
