@@ -2,6 +2,7 @@
 /**
  * _islower - entry point
  * Description: returns 1 if c is a lowercase letter if not it returns 0
+ * @c: the integer value it receives
  * Return: returns 1 or 0
  */
 
