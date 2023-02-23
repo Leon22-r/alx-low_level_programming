@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _isdigit - returns 1 if c is a digit
+ * @c: the input being investigated
  * Return: 0 success
  */
 
