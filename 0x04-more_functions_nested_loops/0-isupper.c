@@ -9,7 +9,7 @@
 
 int _isupper(int c)
 {
-	if ( c == 'A'; c <= 'Z' )
+	if (c == 'A'|| c <= 'Z')
 	{
 		_putchar(c);
 		_putchar(':');
@@ -17,7 +17,7 @@ int _isupper(int c)
 		putchar('0' + 0);
 		_putchar('\n');
 	}
-	else 
+	else
 	{
 		_putchar(c);
 		_putchar(':');
