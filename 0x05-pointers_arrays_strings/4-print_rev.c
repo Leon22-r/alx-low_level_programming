@@ -1,4 +1,5 @@
 #include "main.h"
+#include "2-strlen.c"
 /**
  * print_rev - print string in reverse
  * @s: the string pointer
