@@ -13,6 +13,6 @@ void print_numbers(void)
 	{
 		c = (num % 10 + '0');
 		_putchar(c);
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
