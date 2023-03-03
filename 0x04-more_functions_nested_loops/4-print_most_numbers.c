@@ -8,6 +8,7 @@
 void print_most_numbers(void)
 {
 	int c;
+	int f;
 
 	for (c = 0; c <= 9; c++)
 	{
@@ -15,7 +16,8 @@ void print_most_numbers(void)
 		{
 			continue;
 		}
-		_putchar(c);
+		f = (c % 10 + '0');
+		_putchar(f);
 	}
 	_putchar('\n');
 }
