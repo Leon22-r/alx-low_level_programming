@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * _islower - determine whether is a lowercasse letter.
+ * @c: contains number to be determined.
  *
  * Return: 0.
  */
