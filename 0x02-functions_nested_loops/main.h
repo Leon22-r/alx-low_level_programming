@@ -26,3 +26,6 @@ void more_than(int x);
 
 void less_than(int x);
 
+void last(int);
+
+void less_10(int, int, int);
