@@ -173,7 +173,7 @@ void greater(int x)
 		{
 			_putchar('-');
 			_putchar('0' + x / 100);
-			z = x % 100;
+			z = y % 100;
 			_putchar('0' + z / 10);
 			_putchar('0' + z % 10);	       
 			_putchar(',');
