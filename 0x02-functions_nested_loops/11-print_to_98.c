@@ -7,8 +7,6 @@
  * Return: void.
  */
 
-void less_than_0(int x);
-
 void print_to_98(int n)
 {
 	int x;
@@ -62,21 +60,5 @@ void print_to_98(int n)
 			}
 		}
 	}
-	else
-	{
-		less_than_0(n);
-	}
 }
 
-/**
- * lese_than_0 - print numbers that are less than 0.
- * @x: starting number
- *
- * Return: void.
- */
-void less_than_0(int x)
-{
-	int y;
-
-	y = x;
-}
