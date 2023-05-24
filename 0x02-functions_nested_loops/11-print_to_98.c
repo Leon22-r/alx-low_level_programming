@@ -71,6 +71,7 @@ void more_than(int n)
 			else if (x < 1000 && x > 100)
 			{
 				_putchar('0' + x / 100);
+				x = x / 100;
 				_putchar('0' + x / 10);
 				_putchar('0' + x % 10);
 				_putchar(',');
