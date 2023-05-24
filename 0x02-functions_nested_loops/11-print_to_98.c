@@ -179,11 +179,18 @@ void greater(int x)
 			_putchar(',');
 			_putchar(' ');
 		}
-		else
+		else if (y >= 10 && y < 100)
 		{
 			_putchar('-');
 			_putchar('0' + y / 10);
 			_putchar('0' + y % 10);
+			_putchar(',');
+			_putchar(' ');
+		}
+		else
+		{
+			_putchar('-');
+			_putchar('0' + y);
 			_putchar(',');
 			_putchar(' ');
 		}
