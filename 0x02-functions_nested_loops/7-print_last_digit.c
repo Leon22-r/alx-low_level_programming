@@ -14,7 +14,7 @@ int print_last_digit(int x)
 
 	if (x < 0)
 	{
-		neg = abs(x);
+		neg = x * -1; 
 		last = neg % 10;
 	}
 	else
