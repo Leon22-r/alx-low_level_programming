@@ -169,7 +169,7 @@ void greater(int x)
 
 	for (y = x; y > 0; y--)
 	{
-		if (x >= 100)
+		if (y >= 100)
 		{
 			_putchar('-');
 			_putchar('0' + x / 100);
