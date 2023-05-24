@@ -21,7 +21,7 @@ void print_to_98(int n)
 			{
 				_putchar('0' + x);
 				_putchar(',');
-				_putcahr(' ');
+				_putchar(' ');
 			}
 			else
 			{
@@ -76,5 +76,7 @@ void print_to_98(int n)
  */
 void less_than_0(int x)
 {
-	
+	int y;
+
+	y = x;
 }
