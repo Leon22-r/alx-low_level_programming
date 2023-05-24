@@ -95,7 +95,7 @@ void less_than(int n)
 {
 	int x;
 
-	x = -n 
+	x = -n; 
 	if (x < 100)
 	{
 		for (x = n; x > 0; x--)
