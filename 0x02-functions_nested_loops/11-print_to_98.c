@@ -22,7 +22,7 @@ void print_to_98(int n)
 				_putchar(',');
 				_putchar(' ');
 			}
-			else if
+			else if (x >= 10 && x != 98)
 			{
 				_putchar('0' + x / 10);
 				_putchar('0' + x % 10);
