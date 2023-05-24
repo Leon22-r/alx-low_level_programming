@@ -53,7 +53,7 @@ void last(int x)
 	{
 		_putchar('0' + x / 10);
 		_putchar('0' + x % 10);
-		_putchar('/n');
+		_putchar('\n');
 	}
 }
 /**
