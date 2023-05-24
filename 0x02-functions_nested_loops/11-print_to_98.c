@@ -132,6 +132,7 @@ void less_than(int n)
 
 void one_98(void)
 {
+	int x;
 
 	for (x = 0; x <= 98; x++)
 	{
