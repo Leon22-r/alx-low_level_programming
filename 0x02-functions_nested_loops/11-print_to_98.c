@@ -96,7 +96,7 @@ void less_than(int n)
 {
 	int x;
 
-	x = -n; 
+	x = -n;
 	if (x < 100)
 	{
 		for (x = -n; x > 0; x--)
@@ -164,8 +164,8 @@ void one_98(void)
  */
 void greater(int x)
 {
-       int y;
-       int z;
+	int y;
+	int z;
 
 	for (y = x; y > 0; y--)
 	{
@@ -175,7 +175,7 @@ void greater(int x)
 			_putchar('0' + x / 100);
 			z = y % 100;
 			_putchar('0' + z / 10);
-			_putchar('0' + z % 10);	       
+			_putchar('0' + z % 10);
 			_putchar(',');
 			_putchar(' ');
 		}
@@ -194,5 +194,5 @@ void greater(int x)
 			_putchar(',');
 			_putchar(' ');
 		}
-	}	
+	}
 }
