@@ -33,6 +33,8 @@ void print_to_98(int n)
 			{
 				_putchar('0' + x / 10);
 				_putchar('0' + x % 10);
+				_putchar('\n');
+
 			}
 		}
 	}
@@ -78,6 +80,7 @@ void more_than(int n)
 			{
 				_putchar('0' + x / 10);
 				_putchar('0' + x % 10);
+				_putchar('\n');
 			}
 		}
 }
@@ -131,6 +134,7 @@ void less_than(int n)
 		{
 			_putchar('0' + x / 10);
 			_putchar('0' + x % 10);
+			_putchar('\n');
 		}
 	}
 }
