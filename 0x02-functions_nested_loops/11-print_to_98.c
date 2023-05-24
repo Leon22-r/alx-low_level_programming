@@ -59,31 +59,31 @@ void more_than(int n)
 {
 	int x;
 
-		for (x = n; x >= 98; x--)
+	for (x = n; x >= 98; x--)
+	{
+		if (x < 100 && x != 98)
 		{
-			if (x < 100 && x != 98)
-			{
-				_putchar('0' + x / 10);
-				_putchar('0' + x % 10);
-				_putchar(',');
-				_putchar(' ');
-			}
-			else if (x > 100)
-			{
-				_putchar('0' + x / 100);
-				x = x % 100;
-				_putchar('0' + x / 10);
-				_putchar('0' + x % 10);
-				_putchar(',');
-				_putchar(' ');
-			}
-			else if (x == 98)
-			{
-				_putchar('0' + x / 10);
-				_putchar('0' + x % 10);
-				_putchar('\n');
-			}
+			_putchar('0' + x / 10);
+			_putchar('0' + x % 10);
+			_putchar(',');
+			_putchar(' ');
 		}
+		else if (x > 100)
+		{
+			_putchar('0' + x / 100);
+			x = x % 100;
+			_putchar('0' + x / 10);
+			_putchar('0' + x % 10);
+			_putchar(',');
+			_putchar(' ');
+		}
+		else if (x == 98)
+		{
+			_putchar('0' + x / 10);
+			_putchar('0' + x % 10);
+			_putchar('\n');
+		}
+	}
 }
 /**
  * less_than - prints numbers less than 98.
