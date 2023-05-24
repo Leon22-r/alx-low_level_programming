@@ -69,7 +69,7 @@ void more_than(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
-		else if (x > 100)
+		else if (x >= 100)
 		{
 			_putchar('0' + x / 100);
 			y = x % 100;
