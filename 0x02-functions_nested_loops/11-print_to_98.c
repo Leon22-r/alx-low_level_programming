@@ -58,6 +58,7 @@ void print_to_98(int n)
 void more_than(int n)
 {
 	int x;
+	int y;
 
 	for (x = n; x >= 98; x--)
 	{
@@ -71,9 +72,9 @@ void more_than(int n)
 		else if (x > 100)
 		{
 			_putchar('0' + x / 100);
-			x = x % 100;
-			_putchar('0' + x / 10);
-			_putchar('0' + x % 10);
+			y = x % 100;
+			_putchar('0' + y / 10);
+			_putchar('0' + y % 10);
 			_putchar(',');
 			_putchar(' ');
 		}
