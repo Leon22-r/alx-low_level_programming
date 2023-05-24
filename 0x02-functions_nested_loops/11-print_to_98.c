@@ -42,7 +42,7 @@ void print_to_98(int n)
 	{
 		more_than(x);
 	}
-	else if (n < 98)
+	else if (n < 0)
 	{
 		less_than(x);
 	}
@@ -95,7 +95,7 @@ void less_than(int n)
 {
 	int x;
 
-	x = n * -1;
+	x = -n 
 	if (x < 100)
 	{
 		for (x = n; x > 0; x--)
