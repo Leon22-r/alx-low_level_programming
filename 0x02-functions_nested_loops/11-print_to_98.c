@@ -118,6 +118,21 @@ void less_than(int n)
 			}
 		}
 	}
+	else if (x > 100)
+	{
+		greater(x);
+	}
+	one_98();
+}
+/**
+ * one_98 - print 1 to 98.
+ *
+ * Return: void
+ */
+
+void one_98(void)
+{
+
 	for (x = 0; x <= 98; x++)
 	{
 		if (x < 10)
@@ -140,4 +155,36 @@ void less_than(int n)
 			_putchar('\n');
 		}
 	}
+}
+/**
+ * greater - print negative numbers greater than 100.
+ * @x: first number.
+ * Return: void.
+ */
+void greater(int x)
+{
+       int y;
+       int z;
+
+	for (y = x; y > 0; y--)
+	{
+		if (x >= 100)
+		{
+			_putchar('-');
+			_putchar('0' + x / 100);
+			z = x % 100;
+			_putchar('0' + z / 10);
+			_putchar('0' + z % 10);	       
+			_putchar(',');
+			_putchar(' ');
+		}
+		else
+		{
+			_putchar('-');
+			_putchar('0' + y / 10);
+			_putchar('0' + y % 10);
+			_putchar(',');
+			_putchar(' ');
+		}
+	}	
 }

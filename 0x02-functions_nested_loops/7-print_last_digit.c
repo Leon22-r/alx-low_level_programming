@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 /**
  * print_last_digit - returns the last digit.
  * @x: the value
