@@ -110,6 +110,7 @@ void less_than(int n)
 			}
 			else
 			{
+				_putchar('-');
 				_putchar('0' + x % 10);
 				_putchar(',');
 				_putchar(' ');
