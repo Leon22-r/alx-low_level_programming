@@ -5,7 +5,7 @@
  *
  * Return: void.
  */
-void print_squarre(int size)
+void print_square(int size)
 {
 	int x;
 	int y;
