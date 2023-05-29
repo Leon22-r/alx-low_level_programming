@@ -10,6 +10,8 @@
 void print_array(int *a, int n)
 {
 	int y;
+	if (n <= 0)
+		printf("\n");
 
 	for (y = 0; y < n; y++)
 	{
