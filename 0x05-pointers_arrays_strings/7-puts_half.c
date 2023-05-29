@@ -19,7 +19,7 @@ void puts_half(char *str)
 	{
 		for (a = 0; a < y; a++)
 		{
-			if (a > y / 2)
+			if (a >= y / 2)
 				_putchar(*(str + a));
 
 		}
@@ -29,7 +29,7 @@ void puts_half(char *str)
 	{
 		for (a = 0; a < y; a++)
 		{
-			if (a > (y + 1) / 2)
+			if (a >= (y + 1) / 2)
 				_putchar(*(str + a));
 		}
 		_putchar('\n');
