@@ -3,7 +3,6 @@
  * _strcmp - compares 2 strings
  * @s1: 2sn string
  *
- * 
  * @s2: 1st string
  * Return: difference.
  */
