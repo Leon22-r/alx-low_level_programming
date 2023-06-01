@@ -7,16 +7,17 @@
  */
 char *string_toupper(char *s)
 {
-	char *upper;
-	char up[];
-
-	upper = &up;
+	int x;
+	
+	x = 0;
 	while (*s != '\0')
 	{
-		*s - 32 = *upper;
+		if (*s >= 'a' && *s <= 'z')
+		{
+			*s = *s - 32;
+		}
 		s++;
-		upper++;
+		x++;
 	}
-	*upper = '\0';
-	return (upper);
+	return (s - x);
 }
