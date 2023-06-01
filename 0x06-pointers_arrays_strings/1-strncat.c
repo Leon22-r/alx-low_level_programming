@@ -11,7 +11,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 	char *s;
 	int x;
-	
+
 	s = dest;
 	x = 0;
 	while (*dest)
