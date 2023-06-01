@@ -8,7 +8,9 @@
 char *string_toupper(char *s)
 {
 	char *upper;
+	char up[];
 
+	upper = &up;
 	while (*s != '\0')
 	{
 		*s - 32 = *upper;
