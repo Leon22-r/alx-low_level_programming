@@ -22,7 +22,6 @@ char *_strcat(char *dest, char *src)
 		*(dest + y) = *(src + x);
 		y++;
 	}
-	y++;
 	*(dest + y) = '\0';
 	return (dest);
 }
