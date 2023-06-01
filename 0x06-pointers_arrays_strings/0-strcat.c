@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strcat - append a string to another 
+ * _strcat - append a string to another
  * @dest: string to be appended.
  * @src: strinng to append to dest.
  *
@@ -24,5 +24,5 @@ char *_strcat(char *dest, char *src)
 	}
 	y++;
 	*(dest + y) = '\0';
-	return(dest);
+	return (dest);
 }
