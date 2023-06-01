@@ -7,23 +7,21 @@
  */
 char *leet(char *s)
 {
+	char *y = s;
 	char n[] = {'a', 'e', 'o', 't', 'l'};
 	char x[] = {4, 3, 0, 7, 1};
 	int i;
-	int y;
 
-	y = 0;
 	while (*s != '\0')
 	{
 		for (i = 0; i < 5; i++)
 		{
 			if (*s == n[i]; || *s == n[i] - 32)
 			{
-				n[i] = x[i];
+				n[i] = x[i] + '0';
 			}
 		}
 		s++;
-		y++
 	}
-	return (s - y);
+	return (y);
 }
