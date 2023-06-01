@@ -11,7 +11,7 @@ char *string_toupper(char *s)
 
 	while (*s != '\0')
 	{
-		*s + 32 = *upper;
+		*s - 32 = *upper;
 		s++;
 		upper++;
 	}
