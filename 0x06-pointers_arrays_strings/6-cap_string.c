@@ -7,9 +7,9 @@
  */
 char *cap_string(char *s)
 {
-	int x;
+	char *r;
 
-	x = 0;
+	r = s;
 	while (*s != '\0')
 	{
 		if (*s == '\n' || *s == ' ' || *s == '.' || *s == ',' || *s == '\t')
@@ -34,7 +34,6 @@ char *cap_string(char *s)
 			}
 		}
 		s++;
-		x++;
 	}
-	return (s - x);
+	return (r);
 }
