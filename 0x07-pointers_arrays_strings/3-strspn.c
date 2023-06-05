@@ -8,7 +8,9 @@
  */
 char *_strspn(char *s, char *accept)
 {
-	int i, count, match;
+	int i;
+	int count;
+	int match;
 
 	count = 0;
 	while (*s)
