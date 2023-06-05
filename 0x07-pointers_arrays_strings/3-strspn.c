@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _strspn - calculates the length in bytes the initial of the intial segments of s
+ * _strspn - calculates the length in bytes the initial of the
+ * intial segments of s
  * @s: points to the string to search.
  * @accept: string containing bytes to match
  * Return: length of matching bytes.
