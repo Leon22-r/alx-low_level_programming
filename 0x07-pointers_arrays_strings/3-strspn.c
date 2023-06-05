@@ -6,7 +6,7 @@
  * @accept: string containing bytes to match
  * Return: length of matching bytes.
  */
-int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	int i;
 	int count;
