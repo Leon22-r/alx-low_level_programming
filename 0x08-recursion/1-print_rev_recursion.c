@@ -6,7 +6,15 @@
  */
 void _print_rev_recursion(char *s)
 {
+	char **c = &s;
+
 	if (*s != '\0')
 		_print_rev_recursion(s++);
-	_putchar(*(s - 1);
+	if (**c == *s)
+	{
+		_putchar(**c);
+		_putchar('\n');
+	}
+	else
+		_putchar(*(s - 1);
 }
