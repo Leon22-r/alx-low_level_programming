@@ -21,7 +21,7 @@ int recursion(int x, int y)
 {
 	if (x / y == y && x % y == 0)
 		return (y);
-	recursion(x, y + 1);
+	return (recursion(x, y + 1));
 	if (y >= x)
 		return (-1);
 }
