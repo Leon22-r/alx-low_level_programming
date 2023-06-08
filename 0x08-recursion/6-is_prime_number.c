@@ -22,5 +22,5 @@ int recursion(int x, int y)
 		return (0);
 	if (x % y == 0)
 		return (1);
-	return(recursion(x, y + 1));
+	return (recursion(x, y + 1));
 }
