@@ -18,9 +18,9 @@ int is_prime_number(int n)
  */
 int recursion(int x, int y)
 {
+	if ((x % y) == 0)
+		return (1);
 	if ((y * y) > x)
 		return (0);
-	if (x % y == 0)
-		return (1);
 	return (recursion(x, y + 1));
 }
