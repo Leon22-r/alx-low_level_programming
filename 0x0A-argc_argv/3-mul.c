@@ -1,5 +1,4 @@
 #include <stdio.h>
-int atoi(char *c);
 /**
  * main - multiplies two numbers.
  * @argc: n.o arguements
@@ -9,11 +8,11 @@ int atoi(char *c);
 int main(int argc, char *argv[])
 {
 	int n, i;
-	
+
 	if (argc != 3)
 		return (1);
-	n = _atoi(argv[1];
-	i = _atoi(argv[2];
+	n = _atoi(argv[1]);
+	i = _atoi(argv[2]);
 	return (n * i);
 }
 /**
