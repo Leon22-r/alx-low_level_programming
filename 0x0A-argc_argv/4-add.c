@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		if (argv[i][0] >= '0' && argv[i][0] <= '9')
 		{
 			n = _atoi(argv[i]);
-			if (n == 123456789)
+			if (n < 0)
 			{
 				printf("Error\n");
 				return (1);
@@ -50,7 +50,7 @@ int _atoi(char *c)
 		}
 		else
 		{
-			return (123456789);
+			return (-1);
 		}
 	}
 	return (result);
