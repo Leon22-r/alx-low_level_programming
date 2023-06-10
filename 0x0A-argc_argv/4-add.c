@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 			n = _atoi(argv[i]);
 			if (n == 123456789)
 			{
-				printf ("Error\n");
+				printf("Error\n");
 				return (1);
 			}
 			sum += n;
