@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int sum = 0, i;
-	
+
 
 	for (i = 1; i < argc; i++)
 	{
@@ -26,6 +26,11 @@ int main(int argc, char *argv[])
 	printf("%d\n", sum);
 	return (0);
 }
+/**
+ * _atoi - changes a character to an integer.
+ * @c: the character.
+ * Return: the number.
+ */
 int _atoi(char *c)
 {
 	int result = 0;
