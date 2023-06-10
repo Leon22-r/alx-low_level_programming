@@ -5,7 +5,7 @@
  * @argv[]: pointers to the strings passed.
  * Return: 0
  */
-int main(int argc, char *agrv[]__attribut__((unused)))
+int main(int argc, char *agrv[] __attribute__((unused)))
 {
 	(void) agrc;
 
