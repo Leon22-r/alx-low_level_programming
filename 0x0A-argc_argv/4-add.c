@@ -8,14 +8,20 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0, i;
+	int sum = 0, i, n;
 
 
 	for (i = 1; i < argc; i++)
 	{
 		if (argv[i][0] >= '0' && argv[i][0] <= '9')
 		{
-			sum += _atoi(argv[i]);
+			n = _atoi(argv[i]);
+			if (n == 123456789)
+			{
+				printf ("Error\n");
+				return (1);
+			}
+			sum += n;
 		}
 		else
 		{
@@ -37,8 +43,15 @@ int _atoi(char *c)
 
 	while (*c)
 	{
-		result = result * 10 + (*c - '0');
-		c++;
+		if (*c >= '0' && *c <= '9')
+		{
+			result = result * 10 + (*c - '0');
+			c++;
+		}
+		else
+		{
+			return (123456789);
+		}
 	}
 	return (result);
 }
