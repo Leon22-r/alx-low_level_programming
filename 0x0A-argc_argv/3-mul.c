@@ -13,7 +13,8 @@ int main(int argc, char *argv[])
 		return (1);
 	n = _atoi(argv[1]);
 	i = _atoi(argv[2]);
-	return (n * i);
+	printf("%d\n", n * i);
+	return (0);
 }
 /**
  * _atoi - converts character to integers.
