@@ -2,9 +2,10 @@
 /**
  * main - write's the program's name.
  * @argc: the number of arguements.
- * @argv: pointers to the strings passed.
- * Return: 0 
+ * @argv[]: pointers to the strings passed.
+ * Return: 0
  */
+int main(int argc, char *agrv[])__attribute__((unused));
 int main(int argc, char *agrv[])
 {
 	int i;
@@ -13,5 +14,6 @@ int main(int argc, char *agrv[])
 	{
 		_putchar(argv[0][i]);
 	}
+	_putchar('\n');
 	return (0);
 }
