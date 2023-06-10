@@ -6,7 +6,7 @@
  * Return: 0
  */
 int main(int argc, char *agrv[])__attribute__((unused));
-int main(int argc, char *agrv[])
+int main(int argc, char *agrv[])__attribute__((unused))
 {
 	int i;
 
