@@ -11,7 +11,10 @@ int main(int argc, char *argv[])
 	int n, i;
 
 	if (argc != 3)
+	{
+		printf("Error/n");
 		return (1);
+	}
 	n = _atoi(argv[1]);
 	i = _atoi(argv[2]);
 	printf("%d\n", n * i);
