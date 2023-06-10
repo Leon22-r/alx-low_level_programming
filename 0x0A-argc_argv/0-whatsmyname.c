@@ -2,12 +2,13 @@
 /**
  * main - write's the program's name.
  * @argc: the number of arguements.
- * @argv[]: pointers to the strings passed.
+ * @argv: pointers to the strings passed.
  * Return: 0
  */
-int main(int argc, char *agrv[] __attribute__((unused)))
+int main(int argc, char *agrv[])
 {
 	(void) agrc;
+	(void) argv;
 
 	int i;
 
