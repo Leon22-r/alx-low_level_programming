@@ -37,26 +37,21 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	if (y != 0)
 	{
-		while (*s1)
+		for (i = 0; i < y; i++)
 		{
-			for (i = 0; i < y; i++)
-			{
-				f[i] = *s1;
-				s1++;
-			}
+			f[i] = *s1;
+			s1++;
 		}
 	}
 	if (x != 0)
 	{
-		while (*s2)
+		for (i = y; i <= n; i++)
 		{
-			for (i = y; i < n; i++)
-			{
-				f[i] = *s2;
-				s2++;
-			}
+			f[i] = *s2;
+			s2++;
 		}
 	}
-	f[i + 1] = '\0';
+	else
+		f[n - 1] = '\0';
 	return (f);
 }
