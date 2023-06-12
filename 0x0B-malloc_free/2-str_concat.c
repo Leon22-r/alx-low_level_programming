@@ -11,7 +11,7 @@ int _strlen(char *s)
 	int i;
 
 	i = 0;
-	if (*s == NULL)
+	if (s == NULL)
 		return (0);
 	while (*s)
 	{
@@ -34,12 +34,10 @@ char *str_concat(char *s1, char *s2)
 	x = _strlen(s2);
 	y = _strlen(s1);
 	n = y + x + 1;
+	if (*s1 == '\0' && *s2 == '\0')
+		return (NULL);
 	f = malloc(sizeof(char) * n);
 	if (f == NULL)
-		return (NULL);
-	if (f == NULL)
-		return (NULL);
-	if (*s1 == '\0' && *s2 == '\0')
 		return (NULL);
 	if (y != 0)
 	{
