@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strpbrk - points to first element of s that matches one in accept.
  * @s: string to search match.
@@ -18,6 +19,6 @@ char *_strpbrk(char *s, char *accept)
 		}
 		s++;
 	}
-	*s = NULL;
+	s = NULL;
 	return (s);
 }
