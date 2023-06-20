@@ -11,12 +11,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new;
 
-	if (name && age && owner)
-	{
-		new->name = name;
-		new->age = age;
-		new->owner = owner;
-		return (new);
-	}
-	return (NULL);
+	new->name = name;
+	new->age = age;
+	new->owner = owner;
+	return (new);
 }
