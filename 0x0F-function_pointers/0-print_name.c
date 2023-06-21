@@ -1,4 +1,6 @@
 #include "function_pointer.h"
+#include <stddef.h>
+
 /**
  * print_name - prints a name according to function called-back
  * @name: the name.
@@ -7,7 +9,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	if (f)
+	if (f != NULL)
 		f(name);
 	else 
 		return;
