@@ -1,3 +1,4 @@
+#include "function_pointers"
 /**
  * array_iterator - goes through each element of an array.
  * array: the array.
