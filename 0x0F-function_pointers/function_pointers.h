@@ -1,5 +1,6 @@
 #ifndef HEAER1
 #define HEAER1
+#include <stddef.h>
 
 int _putchar(char c);
 
