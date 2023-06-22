@@ -5,7 +5,7 @@
  * print_numbers - prints desired numbers.
  * @separator: symbol to separate the numbers.
  * @n: number of arguements.
- * Return: void 
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
