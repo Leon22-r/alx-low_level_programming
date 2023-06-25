@@ -41,5 +41,6 @@ void print_all(const char * const format, ...)
 			sep = ", ";
 		}
 		printf("\n");
+		va_end(all);
 	}
 }
