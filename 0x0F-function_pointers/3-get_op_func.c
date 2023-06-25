@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stddef.h>
+#include <string.h>
 /**
  * get_op_func - selects the desired function.
  * @s: the symbol required to select
@@ -19,10 +20,12 @@ int (*get_op_func(char *s))(int a, int b)
 		{NULL, NULL}
 	};
 
-	if (*s != '+' || *s != '-' || *s != '*' || *s != '/' *s != '%')
-		return (NULL);
-	while (s)
+	i = 0;
+	while (i < 5)
 	{
-	
+		if (strcmp(ops[i].op, s) == 0)
+			return (ops[i].f);
+		i++;
 	}
+	return (NULL);
 }

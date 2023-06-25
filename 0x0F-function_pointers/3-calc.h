@@ -20,4 +20,6 @@ int op_div(int, int);
 int op_mod(int, int);
 
 int (*get_op_func(char *s))(int, int);
+
+int get_func(char *s, int a, int b);
 #endif

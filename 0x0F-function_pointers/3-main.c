@@ -10,25 +10,28 @@
  */
 int main(int argv, char *argc[])
 {
-	int num1, num2, result;
+	int num1, num2, result, (*fn)(int, int);
 
 	if (argv != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (argc[2] != '+' || argc[2] != '-' || argc[2] != '*' || argc[2] != '/' || argc[2] != '%')
-	{
-		printf("Error\n");
-		exit(99);
-	}
-	if ((argc[2] == '/' && argc[3] == '0') || (argc[2] == '%' && argc[3] == '0'))
+	num1 = atoi(argc[1]);
+	num2 = atoi(argc[3]);
+
+	if ((*argc[2] == '/' && argc[3] == 0) || (*argc[2] == '%' && argc[3] == 0))
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	num1 = atoi(argc[1]);
-	num2 = atoi(argc[3]);
-	result = (get_op_func(agrc[2]))(num1, num2);
-	return (result);
+	fn = get_op_func(argc[2]);
+	if (fn == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
+	result = fn(num1, num2);
+	printf("%d\n", result);
+	return (0);
 }
