@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 			case 'c':
-				printf("%s%s", sep, va_arg(all, char *));
+				printf("%s%c", sep, va_arg(all, int));
 				break;
 			case 'i':
 				k = va_arg(all, int);
