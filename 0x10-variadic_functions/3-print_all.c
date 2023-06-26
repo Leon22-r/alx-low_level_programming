@@ -10,7 +10,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list(all);
-	int i = 0;
+	int i = 0, k;
 	char *string, *sep = "";
 
 	if (format)
@@ -24,7 +24,8 @@ void print_all(const char * const format, ...)
 				printf("%s%s", sep, va_arg(all, char *));
 				break;
 			case 'i':
-				printf("%s%d", sep, va_arg(all, int));
+				k = va_arg(all, int);
+				printf("%s%d", sep, k);
 				break;
 			case 'f':
 				printf("%s%f", sep, va_arg(all, double));
