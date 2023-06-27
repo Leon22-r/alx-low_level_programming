@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include "dog.h"
-#include "stdlib.h"
+#include <stdlib.h>
 /**
  * new_dog - stores info of a new dog
  * @name: it's name
@@ -19,7 +19,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (new == NULL)
 		return (NULL);
 	new->name = name;
-	new->age = age;
+	new->age = age
 	new->owner = owner;
 	copy1 = name;
 	copy2 = owner;
