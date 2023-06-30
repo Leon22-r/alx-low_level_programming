@@ -7,15 +7,18 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-	char *string_added;
+	char *string_added = "(nil)";
 	int i = 0, len = 0;
 	list_t *temp, *new;
 
-	string_added = strdup(str);
-	while (string_added[i] != '\0')
+	if (str != NULL)
 	{
-		len++;
-		i++;
+		string_added = strdup(str);
+		while (string_added[i] != '\0')
+		{
+			len++;
+			i++;
+		}
 	}
 	temp = malloc(sizeof(list_t));
 	temp = *head;
