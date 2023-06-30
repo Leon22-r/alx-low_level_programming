@@ -11,6 +11,9 @@ list_t *add_node(list_t **head, const char *str)
 	int i = 0, len = 0;
 	list_t *temp, *new;
 
+	if (str == NULL)
+		return (NULL);
+
 	string_added = strdup(str);
 	while (string_added[i] != '\0')
 	{
