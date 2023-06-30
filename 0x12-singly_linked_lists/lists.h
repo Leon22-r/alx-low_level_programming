@@ -17,11 +17,11 @@ typedef struct list_s
 	char *str;
 	unsigned int len;
 	struct list_s *next;
-} list_s;
+} list_t;
 
 
 
 /*function prototypes*/
 int _putchar(char c);
-size_t print_list(const list_s *h);
+size_t print_list(const list_t *h);
 #endif /*LISTS_H*/
