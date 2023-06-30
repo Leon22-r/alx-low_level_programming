@@ -6,6 +6,7 @@
 */
 size_t print_list(const list_t *h)
 {
+	int i;
 	size_t a = 1;
 	size_t x = 1;
 
