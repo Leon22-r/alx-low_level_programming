@@ -35,10 +35,10 @@ list_t *add_node_end(list_t **head, const char *str)
 }
 
 /**
- * last_elem moves upto the last element of list
+ * last_elem - moves upto the last element of list
  * @head: the list.
  * Return: address of the last element.
- * 
+ *
 */
 list_t *last_elem(list_t *head)
 {
