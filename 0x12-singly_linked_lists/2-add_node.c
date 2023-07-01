@@ -27,7 +27,7 @@ list_t *add_node(list_t **head, const char *str)
 		if (new == NULL)
 			return (NULL);
 		new->len = len;
-		new->str = string_added ? string_added : "(nil)";
+		new->str = string_added;
 		new->next = NULL;
 		return (new);
 	}
@@ -37,7 +37,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new == NULL)
 		return (NULL);
 	new->len = len;
-	new->str = string_added ? string_added : "(nil)";
+	new->str = string_added;
 	new->next = *head;
 
 	*head = new;
