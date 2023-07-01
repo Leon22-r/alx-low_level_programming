@@ -20,13 +20,24 @@ list_t *add_node(list_t **head, const char *str)
 			i++;
 		}
 	}
+	if (*head == NULL)
+	{
+		*head = malloc(sizeof(list_t));
+		new = malloc(sizeof(list_t));
+		if (new == NULL)
+			return (NULL);
+		new->len = len;
+		new->str = string_added ? string_added : "(nil)";
+		new->next = NULL;
+		return (new);
+	}
 	temp = malloc(sizeof(list_t));
 	temp = *head;
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
 	new->len = len;
-	new->str = string_added ? string_added : NULL;
+	new->str = string_added ? string_added : "(nil)";
 	new->next = *head;
 
 	*head = new;
