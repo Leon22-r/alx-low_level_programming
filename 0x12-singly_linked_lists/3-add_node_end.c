@@ -21,12 +21,16 @@ list_t *add_node_end(list_t **head, const char *str)
 		}
 	}
 	new = malloc(sizeof(list_t));
+	if (new == NULL)
+		return (NULL);
 	new->len = len;
 	new->str = string;
 	new->next = NULL;
 	if (*head == NULL)
 	{
 		*head = malloc(sizeof(list_t));
+		if (*head == NULL)
+			return (NULL);
 		*head = new;
 		return (new);
 	}
