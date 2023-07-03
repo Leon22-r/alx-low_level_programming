@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * add_nodeint - add's a node at the beginning of a 
+ * add_nodeint - add's a node at the beginning of a
  * list
- * @h: the list
+ * @head: the list
  * @n: the number in the list.
  * Return: pointer to the list
 */
