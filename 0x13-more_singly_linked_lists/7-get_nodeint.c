@@ -33,7 +33,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
  * len - number of nodes in a list
  * @h: the list
  * Return: size of the list
-*/
+ */ 
 unsigned int len(listint_t *h)
 {
 	unsigned int i = 0;
