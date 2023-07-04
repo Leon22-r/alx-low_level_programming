@@ -6,22 +6,21 @@
 */
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *temp, *temp2;
+	listint_t *temp = NULL;
+	listint_t *temp2 = NULL;
+	listint_t *new = *head;
 
 	if (head == NULL || *head == NULL)
 		return (NULL);
-	
-	temp = NULL;
-	temp2 = NULL;
 
-	while (*head != NULL)
+	while (new != NULL)
 	{
-		temp = (*(head))->next;
-		(*(head))->next = temp;
-		temp2 = (*head);
-		*head = temp;
+		temp = new->next;
+		new->next = temp2;
+		temp2 = new;
+		new = temp;
 	}
-	*head = temp;
-	return (temp);
+	*head = temp2;
+	return (temp2);
 }
 
