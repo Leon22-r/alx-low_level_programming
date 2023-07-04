@@ -21,11 +21,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		return (1);
 	}
 	if (index >= len(*head))
-		return (-1);	
+		return (-1);
 	temp = malloc(sizeof(listint_t));
 	if (temp == NULL)
 		return (-1);
-	
+
 	h = *head;
 	while (i != (index - 1))
 	{
