@@ -2,6 +2,7 @@
 /**
  * insert_nodeint_at_index - insert a node at a
  * certain index.
+ * @head: the list
  * @idx: index where the new node is to be added
  * @n: the number of the new list.
  * Return: address of the new node
