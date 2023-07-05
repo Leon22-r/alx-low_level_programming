@@ -7,7 +7,7 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
-	char *string_added = "(nil)";
+	char *string_added = "";
 	int i = 0, len = 0;
 	list_t *temp, *new;
 
@@ -20,30 +20,14 @@ list_t *add_node(list_t **head, const char *str)
 			i++;
 		}
 	}
-	if (*head == NULL)
-	{
-		*head = malloc(sizeof(list_t));
-		new = malloc(sizeof(list_t));
-		if (new == NULL)
-			return (NULL);
-		new->len = len;
-		new->str = string_added;
-		new->next = NULL;
-		*head = new;
-		return (*head);
-	}
-	temp = malloc(sizeof(list_t));
-	if (temp == NULL)
-		return (NULL);
-	temp = *head;
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
-		return (NULL);
+			return (NULL);
 	new->len = len;
 	new->str = string_added;
 	new->next = *head;
-
 	*head = new;
-	free(temp);
-	return (*head);
+
+	return (new);
 }
+
