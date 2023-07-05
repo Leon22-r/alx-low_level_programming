@@ -4,7 +4,7 @@
  * @head: the list
  * Return: number of nodes.
 */
-size_t print_listint_safe(const listint_t *head)
+size_t print_listint_safe(const listint_t **head)
 {
-	
+
 }
