@@ -6,13 +6,18 @@
 */
 void print_binary(unsigned long int n)
 {
-	int x = sizeof(n) * 8 - 1;
-	char c;
+	unsigned long int bytes = sizeof(long int) * 8, lid_0 = 1;
+	unsigned long int byte1 = 1;
 
-	while (x >= 0)
+	for (byte1 = byte1 << (bytes - 1); byte1; byte1 = byte1 >> 1)
 	{
-		c = (n >> x) & 1;
-		_putchar(c + '0');
-		x--;
+		if ((n & byte1) && lid_0)
+			lid_0 = 0;
+		if (!lid_0)
+			_putchar(((n & byte1) ? 1 : 0) + '0');
 	}
+
+	if (lid_0)
+		_putchar('0');
+
 }
