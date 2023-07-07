@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * get_bit - sets the bit at index to 1
+ * set_bit - sets the bit at index to 1
  * @n: the number
  * @index: the index
  * Return: 1 on success and -1 on failure
