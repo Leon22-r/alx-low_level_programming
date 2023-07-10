@@ -8,22 +8,20 @@
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fn, stdut;
+	int fn;
 	ssize_t prnt, readed;
-	char *letts;
+	char letts[1024];
 
-	if (filename == NULL || *filename == NULL)
+	if (filename == NULL)
 		return (0);
 
-	letts = malloc(letters);
 	fn = open(filename, O_RDONLY);
 	if (fn != -1)
 	{
 		/*reading the file*/
 		readed = read(fn, letts, letters);
-		stdut = open(STDOUT_FILENO, O_WRONLY);
 		/*writing to stdout*/
-		prnt = write(stdut, letts, letters);
+		prnt = write(STDOUT_FILENO, letts, letters);
 		
 	}
 	else
