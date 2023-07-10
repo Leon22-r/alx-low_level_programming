@@ -10,14 +10,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fn;
 	ssize_t prnt, readed;
-	char *letts;
+	char letts[1024];
 
 	if (filename == NULL)
 		return (0);
 
 	fn = open(filename, O_RDONLY);
-	letts = malloc(sizeof(char *));
-
 	if (fn != -1)
 	{
 		/*reading the file*/
@@ -29,6 +27,5 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	else
 		return (0);
-	free(letts);
 	return (prnt);
 }
