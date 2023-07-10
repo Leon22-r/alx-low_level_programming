@@ -11,7 +11,8 @@ int create_file(const char *filename, char *text_content)
 
 	if (filename == NULL)
 		return (-1);
-	len = strlen(text_content);
+	if (text_content)
+		len = _strlen(text_content);
 	file = open(filename, O_WRONLY | O_TRUNC | O_CREAT, 600);
 	if (file != 0)
 	{
@@ -23,5 +24,23 @@ int create_file(const char *filename, char *text_content)
 	else
 		return (-1);
 	return (1);
+
+}
+
+/**
+ * _strlen - finds the length of a string
+ * @s: the string
+ * Return: the length
+*/
+size_t _strlen(char *s)
+{
+	size_t len = 0;
+
+	if (*s)
+	{
+		len++;
+		s++;
+	}
+	return (len);
 
 }
