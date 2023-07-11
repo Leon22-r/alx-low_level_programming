@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	if (to != -1 && from != -1)
 	{
 		red = read(from, readed, sizeof(readed));
-		writen =  write(to, readed, sizeof(readed));
+		writen =  write(to, readed, red);
 		close1 = close(from);
 		close2 = close(to);
 		if (close1 != 0)
