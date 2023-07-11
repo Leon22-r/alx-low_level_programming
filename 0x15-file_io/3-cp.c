@@ -1,8 +1,8 @@
 #include "main.h"
 /**
  * main - copies content of file 1 to file 2
- * @av: the number of arguements
- * @ac: the files
+ * @argv: the number of arguements
+ * @argc: the files
  * Return: 1 on success and 0 on failure
 */
 int main(int argc, char *argv[])
@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 	int from, to, close1, close2;
 	char readed[1024];
 	ssize_t red, writen;
-	
+
 	if (argc != 3)
 	{
 		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n");
@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		dprintf(STDOUT_FILENO,  "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC , 0644);
+	to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0644);
 	if (to < 0)
 	{
 		dprintf(STDOUT_FILENO, "Error: Can't write to %s\n", argv[2]);
@@ -46,6 +46,5 @@ int main(int argc, char *argv[])
 			exit(100);
 		}
 	}
-
-	
+	return (0);
 }
