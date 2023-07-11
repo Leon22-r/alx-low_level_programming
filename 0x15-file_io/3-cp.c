@@ -7,11 +7,12 @@
 */
 int main(int argc, char *argv[])
 {
-	(void) argv;
-	int from, to, close1, close2;
+	int from, to;
+	int close1, close2;
 	char readed[1024];
 	ssize_t red, writen;
 
+	(void) argv;
 	if (argc != 3)
 	{
 		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n");
