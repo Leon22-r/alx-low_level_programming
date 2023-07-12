@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stddef.h>
+#include <stdarg.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <stdlib.h>
