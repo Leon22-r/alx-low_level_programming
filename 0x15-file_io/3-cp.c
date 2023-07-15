@@ -7,7 +7,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int from, to, close1, close2;
+	int from, to, close1;
 	char readed[1024];
 	ssize_t red;
 
