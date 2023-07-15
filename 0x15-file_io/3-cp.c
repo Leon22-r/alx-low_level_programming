@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 			write(to, readed, red);
 		}
 		close1 = close(from);
-		close2 = close(to);
+		close(to);
 		if (close1 != 0)
 		{
 			dprintf(STDOUT_FILENO, "Error: Can't close fd %d", from);
