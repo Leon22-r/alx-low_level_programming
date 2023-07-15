@@ -31,18 +31,15 @@ int main(int argc, char *argv[])
 	}
 	if (to != -1 && from != -1)
 	{
-		red = read(from, readed, sizeof(readed));
-		write(to, readed, red);
+		for (; (red = read(from, readed, sizeof(readed))) > 0; )
+		{
+			write(to, readed, red);
+		}
 		close1 = close(from);
 		close2 = close(to);
 		if (close1 != 0)
 		{
 			dprintf(STDOUT_FILENO, "Error: Can't close fd %d", from);
-			exit(100);
-		}
-		if (close2 != 0)
-		{
-			dprintf(STDOUT_FILENO, "Error: Can't close fd %d", to);
 			exit(100);
 		}
 	}
