@@ -7,10 +7,9 @@
 */
 int main(int argc, char *argv[])
 {
-	int from, to;
-	int close1, close2;
+	int from, to, close1, close2;
 	char readed[1024];
-	ssize_t red, writen;
+	ssize_t red;
 
 	(void) argv;
 	if (argc != 3)
@@ -18,7 +17,7 @@ int main(int argc, char *argv[])
 		dprintf(STDOUT_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	from = open(argv[1], O_RDONLY);
+	from = open(argv[1], O_RDONLY);/*opening the file to from*/
 	if (from < 0)
 	{
 		dprintf(STDOUT_FILENO,  "Error: Can't read from file %s\n", argv[1]);
@@ -33,7 +32,7 @@ int main(int argc, char *argv[])
 	if (to != -1 && from != -1)
 	{
 		red = read(from, readed, sizeof(readed));
-		writen =  write(to, readed, red);
+		write(to, readed, red);
 		close1 = close(from);
 		close2 = close(to);
 		if (close1 != 0)
