@@ -34,11 +34,11 @@ int main(int argc, char *argv[])
 		for (; (red = read(from, readed, sizeof(readed))) > 0; )
 		{
 			write(to, readed, red);
-			if (from < 0)
-			{
-				dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-				exit(98);
-			}
+		}
+		if (red < 0)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
 		}
 		close(from);
 		close(to);
