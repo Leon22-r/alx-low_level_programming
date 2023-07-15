@@ -27,7 +27,7 @@ int main(int argc, char *argv[])
 	if (to < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		exit(100);
+		exit(99);
 	}
 	if (to != -1 && from != -1)
 	{
