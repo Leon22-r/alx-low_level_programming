@@ -7,7 +7,7 @@
 */
 int main(int argc, char *argv[])
 {
-	int from, to;
+	int from, to, close1;
 	char readed[1024];
 	ssize_t red;
 
@@ -35,13 +35,13 @@ int main(int argc, char *argv[])
 		{
 			write(to, readed, red);
 		}
-		if (red < 0)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
-		close(from);
+		close1 = close(from);
 		close(to);
+		if (close1 != 0)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d", from);
+			exit(100);
+		}
 	}
 	return (0);
 }
