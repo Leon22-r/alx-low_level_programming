@@ -5,7 +5,7 @@
 */
 void print_binary(unsigned long int n)
 {
-	unsigned long int bytes = sizeof(long int);
+	unsigned long int bytes = sizeof(long int) * 8;
 	unsigned long int byte = 1;
 	long int zero = 1;
 
@@ -19,6 +19,6 @@ void print_binary(unsigned long int n)
 			_putchar('0');
 		zero = 0;
 	}
-	if (n == 0)
+	if (zero)
 		_putchar('0');
 }
