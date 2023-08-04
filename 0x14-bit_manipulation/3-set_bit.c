@@ -9,6 +9,8 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int byte = 1;
 
+	if (index > ((sizeof(long int) * 8)))
+		return (-1);
 	byte = byte << index;
 	*n = *n | byte;
 	if (*n & byte)
